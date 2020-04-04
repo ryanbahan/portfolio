@@ -11,3 +11,7 @@ gsap.from('.skills-1', {opacity: 0, delay: 2.25});
 gsap.from('.skills-2', {opacity: 0, delay: 2.65});
 
 gsap.from('.skills-3', {opacity: 0, delay: 3.05});
+
+gsap.from('.fa-github', {opacity: 0, delay: 5});
+
+gsap.from('.fa-linkedin-in', {opacity: 0, delay: 5.25});
