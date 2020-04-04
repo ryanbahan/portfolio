@@ -1,3 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Spartan', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+}
+
 body {
-  background-color: black;
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: min-content;
+  background-color: #e3e3e3;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  text-align: center;
+  min-width: 2.5rem;
+  margin: 0.75rem 1rem;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partial-bg {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: #e3e3e3;
+  min-height: 100vh;
+  width: 47.5%;
+  z-index: -1;
+}
+
+.name {
+  font-size: 20vw;
+}
+
+.skills {
+  margin-top: 2.5%;
+  padding: 0 2.5%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.underline {
+  padding-bottom: 1%;
+  border-bottom: solid 1px black;
 }
