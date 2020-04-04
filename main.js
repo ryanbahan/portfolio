@@ -1,6 +1,6 @@
 gsap.from('.partial-bg', {opacity: 0, xPercent: -125, duration: 1.25, ease: 'Power2.easeInOut'});
 
-gsap.from('nav', {yPercent: -150, duration: 2, ease: "expo.out", delay: 3.5});
+gsap.from('nav', {y: -150, duration: 2, ease: "expo.out", delay: 3.5});
 
 gsap.from('.firstname', {opacity: 0, duration: 2.5, delay: 1.125});
 

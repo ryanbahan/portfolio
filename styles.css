@@ -59,7 +59,9 @@ main {
 }
 
 .skills {
-  margin-top: 2.5%;
+  font-size: 2.9vw;
+  font-weight: 300;
+  margin: 2.5% 0;
   padding: 0 3%;
   list-style: none;
   display: flex;
@@ -68,5 +70,29 @@ main {
 
 .underline {
   padding-bottom: 1%;
-  border-bottom: solid 1px black;
+  border-bottom: solid 0.5px rgba(0,0,0,0.85);
+}
+
+.social-icons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  list-style: none;
+  display: flex;
+  margin: 0.25rem;
+}
+
+.social-icons li {
+  font-size: 1.5rem;
+  padding: 1rem;
+  min-width: 2rem;
+  text-align: center;
+}
+
+.fa-github {
+  color: #F1502F;
+}
+
+.fa-linkedin-in {
+  color: #2867B2;
 }
