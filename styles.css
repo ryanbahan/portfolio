@@ -10,10 +10,10 @@ a {
   color: #fff;
 }
 
-/* html, body {
+html, body {
   width: 100vw;
   height: 100%;
-} */
+}
 
 nav {
   background: rgb(175,82,255);
@@ -74,13 +74,12 @@ main {
 }
 
 .title-label {
-  margin: 2.5% 0;
+  margin: 3rem 0 2.5rem 0;
 }
 
-.portfolio-item-wrapper {
-  border: solid 1px black;
-  display: flex;
-  justify-content: space-between;
+.lower-cta-tagline {
+  margin-bottom: 2.5rem;
+  max-width: 60vw;
 }
 
 .center-wrapper {
@@ -148,28 +147,24 @@ main {
   color: rgba(0,0,0,0.65)
 }
 
-.portfolio-item-title {
-  min-width: 300px;
-  width: 22.5rem;
+.portfolio-item-wrapper {
+  width: 60vw;
+  max-width: 55rem;
+  display: grid;
+  grid-gap: 5%;
+  grid-auto-columns: min-content;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-auto-rows: min-content;
 }
 
-.portfolio-item-title p {
-  line-height: 1.5;
-}
-
-.portfolio-item-title > * {
-  margin: 2.5% 0;
-}
-
-.portfolio-item-image {
-  width: 50rem;
-}
-
-.portfolio-button-container button {
-  padding:  0.75rem 1rem;
-  background-color: #fff;
-  border-radius: 2.5px;
-  cursor: pointer;
+.portfolio-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px black;
+  border-radius: 0.35rem;
+  width: 100%;
+  height: 15rem;
 }
 
 footer {
