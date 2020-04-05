@@ -4,14 +4,16 @@
   font-family: 'Spartan', sans-serif;
 }
 
-html, body {
-  width: 100vw;
-  height: 100vh;
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
 }
 
-body {
-  position: relative;
-}
+/* html, body {
+  width: 100vw;
+  height: 100%;
+} */
 
 nav {
   background: rgb(175,82,255);
@@ -22,6 +24,7 @@ nav {
   right: 0;
   min-width: 15vw;
   border-bottom-left-radius: 5rem;
+  z-index: 10;
   /* clip-path: circle(20%); */
 }
 
@@ -45,15 +48,44 @@ nav li {
 }
 
 main {
-  width: 100vw;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.work {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 2.5%;
+}
+
+.title-label {
+  margin: 2.5% 0;
+}
+
+.portfolio-item-wrapper {
+  border: solid 1px black;
+  display: flex;
+  justify-content: space-between;
 }
 
 .center-wrapper {
   pointer-events: none;
+  z-index: 5;
 }
 
 .partial-bg {
@@ -63,20 +95,20 @@ main {
   position: absolute;
   background-color: #e3e3e3;
   min-height: 100vh;
-  width: 47.85%;
+  width: 47.3%;
 }
 
 .firstname,
 .lastname {
-  font-size: 20vw;
-  font-weight: 200;
+  font-size: 10vw;
+  font-weight: 100;
 }
 
 .skills {
   font-size: 2.9vw;
   font-weight: 300;
   margin: 2.5% 0;
-  padding: 0 3%;
+  padding: 0 1.5%;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -116,6 +148,31 @@ main {
   color: rgba(0,0,0,0.65)
 }
 
-#hello {
-  /* width: 40vw; */
+.portfolio-item-title {
+  min-width: 300px;
+  width: 22.5rem;
+}
+
+.portfolio-item-title p {
+  line-height: 1.5;
+}
+
+.portfolio-item-title > * {
+  margin: 2.5% 0;
+}
+
+.portfolio-item-image {
+  width: 50rem;
+}
+
+.portfolio-button-container button {
+  padding:  0.75rem 1rem;
+  background-color: #fff;
+  border-radius: 2.5px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: grey;
+  height: 5vh;
 }

@@ -3,36 +3,58 @@
   <head>
     <meta charset="utf-8">
     <title>hey, i'm ryan.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/140c3ff74c.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Spartan:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
   </head>
-  <body>
+  <body data-barba="wrapper">
     <nav>
       <ul>
         <li>blog</li>
-        <li>work</li>
+        <a href="#"<li>work</li></a>
       </ul>
     </nav>
-    <main>
-      <ul class="social-icons">
-        <li><i class="fab fa-github"></i></li>
-        <li><i class="fab fa-linkedin-in"></i></li>
-        <li><i class="fas fa-envelope-square"></i></i></li>
-      </ul>
-      <div class="partial-bg">
-        <canvas id="hello"></canvas>
-      </div>
-      <div class="center-wrapper">
-        <p class="firstname">ryan</p>
-        <p class="lastname">bahan</p>
-        <ul class="skills">
-          <li class="skills-1 underline">developer</li>
-          <li class="skills-2">writer</li>
-          <li class="skills-3">creator</li>
+    <main data-barba="container" data-barba-namespace="home">
+      <section class="landing">
+        <ul class="social-icons">
+          <li><i class="fab fa-github"></i></li>
+          <li><i class="fab fa-linkedin-in"></i></li>
+          <li><i class="fas fa-envelope-square"></i></i></li>
         </ul>
-      </div>
+        <div class="partial-bg">
+          <canvas id="home-points"></canvas>
+        </div>
+        <div class="center-wrapper">
+          <p class="firstname">ryan <span class="lastname">bahan</span></p>
+          <ul class="skills">
+            <li class="skills-1 underline">developer</li>
+            <li class="skills-2">writer</li>
+            <li class="skills-3">creator</li>
+          </ul>
+        </div>
+      </section>
+      <section class="work">
+        <h2 class="title-label">Featured Work</h2>
+        <article class="portfolio-item-wrapper">
+          <img class="portfolio-item-image" src="./assets/whats-new.png" alt="portfolio image">
+          <section class="portfolio-item-title">
+            <h2>What's News?</h2>
+            <h3>React, News API, Mapquest API</h3>
+            <p>What's new is a simple & efficient news application built in React.
+              It fetches recent news stories via the News API, and serves up news in entertainment,
+              health, technology, and science.</p>
+              <p>Users can also search by topic, or view location-based
+              news, made possible via the reverse geocoding functionality of Mapquest API.</p>
+              <div class="portfolio-button-container">
+                <button type="button" name="github-button">View Repo</button>
+                <button type="button" name="github-pages-button">View GH Pages</button>
+              </div>
+          </section>
+      </article>
+      </section>
     </main>
+    <footer></footer>
     <script src="https://unpkg.com/@barba/core"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pts/0.9.1/pts.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
