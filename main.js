@@ -1,3 +1,12 @@
+
+// barba.init({
+//   sync: true,
+//   transitions: [{
+//
+//   }]
+// });
+
+
 const timeline = gsap.timeline({defaults:{duration: 1}});
 
 timeline.from(".partial-bg", {opacity: 0, xPercent: -125, duration: 1.25, ease: 'Power2.easeInOut'})
@@ -9,7 +18,7 @@ timeline.from(".partial-bg", {opacity: 0, xPercent: -125, duration: 1.25, ease: 
 .from('nav', {y: -150, duration: 2, ease: "expo.out"})
 .from('.fa-github', {opacity: 0}, "-=0.75")
 .from('.fa-linkedin-in', {opacity: 0}, "-=0.75")
-.from('.fa-envelope-square', {opacity: 0}, "-=0.75")
+.from('.fa-envelope-square', {opacity: 0}, "-=0.75");
 
 
 Pts.namespace(this);
