@@ -112,3 +112,11 @@ function generateHomePoints() {
 };
 
 generateHomePoints();
+
+const workSection = document.querySelector('.work');
+
+workSection.addEventListener('click', openItem)
+
+function openItem() {
+  console.log(event.target.dataset.portfolioItem);
+}
