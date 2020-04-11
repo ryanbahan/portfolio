@@ -151,18 +151,19 @@ main {
 .portfolio-item-wrapper {
   max-width: 100vw;
   overflow: scroll;
-  margin: 0 5rem;
+  margin: 0 2.5rem;
 }
 
 .portfolio-card {
   display: flex;
   flex-wrap: wrap;
   margin: 0 0 5rem 0;
+  max-width: 100vw;
 }
 
 .portfolio-card-info {
   padding: 0 2.5rem 1.5rem 0;
-  width: 30rem;
+  width: 27.5rem;
   flex-grow: 1;
   margin-left: 2.5rem;
 }
@@ -178,6 +179,7 @@ main {
 }
 
 .device-mock {
+  min-width: 20rem;
   width: 30rem;
   max-width: 100%;
   flex-grow: 1;
@@ -188,7 +190,6 @@ main {
 }
 
 .portfolio-description {
-  max-width: 30rem;
   line-height: 1.5;
 }
 
