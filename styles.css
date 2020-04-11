@@ -161,9 +161,10 @@ main {
 }
 
 .portfolio-card-info {
-  padding: 0 2.5rem 1.5rem 2.5rem;
+  padding: 0 2.5rem 1.5rem 0;
   width: 30rem;
   flex-grow: 1;
+  margin-left: 2.5rem;
 }
 
 .portfolio-card-info > * {
@@ -181,6 +182,9 @@ main {
   max-width: 100%;
   flex-grow: 1;
   height: 100%;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .portfolio-description {
