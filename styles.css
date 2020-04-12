@@ -196,6 +196,7 @@ main {
 
 .portfolio-card-info button {
   padding: 1rem;
+  font-size: 0.85rem;
   border-radius: 0.25rem;
   cursor: pointer;
 }

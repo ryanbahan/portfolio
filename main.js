@@ -89,7 +89,9 @@ function generateHomePoints() {
     // get perpendicular unit vectors from each points on the line
     let pps = pts.map( (p) => Geom.perpendicular( p.$subtract( line[0] ).unit() ).add(p) );
 
-    let angle = space.pointer.x/space.size.x * Const.two_pi * 2;
+    // let angle = space.pointer.x/space.size.x * Const.two_pi * 2;
+    // version without mouse events
+    let angle = space.size.x * Const.two_pi * 2;
 
     // draw each perpendicular like a sine-wave
     pps.forEach( (pp, i) => {
