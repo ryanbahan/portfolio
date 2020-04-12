@@ -43,33 +43,33 @@ function homePageAnimation() {
 }
 
 
-// barba.init({
-//
-//   sync: true,
-//
-//   transitions: [{
-//
-//     async leave(data) {
-//       const done = this.async();
-//
-//       workPageAnimation();
-//       await delay(1500);
-//       done();
-//
-//     },
-//
-//     // async enter(data) {
-//     //   console.log('enter');
-//     //   contentAnimation();
-//     // },
-//
-//     async once(data) {
-//       console.log('once');
-//       homePageAnimation();
-//     }
-//
-//   }]
-// });
+barba.init({
+
+  sync: true,
+
+  transitions: [{
+
+    async leave(data) {
+      const done = this.async();
+
+      workPageAnimation();
+      await delay(1500);
+      done();
+
+    },
+
+    // async enter(data) {
+    //   console.log('enter');
+    //   contentAnimation();
+    // },
+
+    async once(data) {
+      console.log('once');
+      homePageAnimation();
+    }
+
+  }]
+});
 
 
 Pts.namespace(this);
