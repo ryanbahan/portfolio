@@ -4,7 +4,7 @@
   font-family: 'Spartan', sans-serif;
 }
 
-a {
+nav a {
   text-decoration: none;
   font-weight: 600;
   color: #fff;
@@ -24,7 +24,7 @@ nav {
   right: 0;
   min-width: 15vw;
   border-bottom-left-radius: 5rem;
-  z-index: 0;
+  z-index: 2;
 }
 
 nav ul {
