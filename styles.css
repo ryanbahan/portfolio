@@ -10,6 +10,10 @@ nav a {
   color: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   width: 100vw;
   height: 100%;
